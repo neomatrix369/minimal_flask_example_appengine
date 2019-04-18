@@ -30,6 +30,7 @@ def extractpackages(language="python"):
     """
     # the data the user input, in json format
     input_data = request.json
+    print(input_data)
 
     # load our pre-trained model & function
     keywords_api = get_keywords_api(language)
