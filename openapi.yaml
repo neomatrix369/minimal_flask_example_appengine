@@ -6,7 +6,16 @@ info:
   version: "1.0"
 
 paths:
-  /ping:
+  /extractpackages/python:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /extractpackages/r:
     get:
       responses:
         '200':
