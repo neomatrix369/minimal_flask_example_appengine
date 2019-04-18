@@ -12,6 +12,11 @@ app = Flask(__name__)
 python_keywords_api = get_keywords_api("python")
 r_keywords_api = get_keywords_api("r")
 
+# Define our "ping" end point
+@app.route('/ping')
+def ping_api():
+  return(ping())
+
 # Define a post method for our API: python packages.
 @app.route('/extractpackages/python', methods=['POST'])
 def extract_python_packages():

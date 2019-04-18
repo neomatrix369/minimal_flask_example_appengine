@@ -1,6 +1,10 @@
 from flashtext.keyword import KeywordProcessor
 import pickle
 
+
+def ping():
+	return("Pong!")
+
 # Function that takes loads in our pickled word processor
 # and defines a function for using it. This makes it easy
 # to do these steps together when serving our model.

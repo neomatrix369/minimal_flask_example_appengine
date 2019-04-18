@@ -3,7 +3,18 @@ info:
   title: "Package name extractor"
   description: "API that accepts a text string and returns packages names in it."
   version: "1.0"
+
 paths:
+  /ping:
+      get:
+        responses:
+          '200':
+            description: OK
+            content:
+              text/plain:
+                schema:
+                  type: string
+
   /extractpackages/python:
     post:
       description: "Extract python package names"
@@ -19,7 +30,7 @@ paths:
           description: "Returns names & indexs of python packages in the provided text"
           content: 
            application/json: {}
-           
+
   /extractpackages/r:
     post:
       description: "Extract R package names"
