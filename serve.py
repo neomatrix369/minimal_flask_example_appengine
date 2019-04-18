@@ -13,8 +13,8 @@ def get_keywords_api(language="python"):
     
     # Function to apply our model & extract keywords from a 
     # provided bit of text
-    def keywords_api(keywordProcessor, text, span_info=True): 
-        keywords_found = keywordProcessor.extract_keywords(text, span_info=True)      
+    def keywords_api(text, span_info=True): 
+        keywords_found = keyword_processor.extract_keywords(text, span_info=span_info)
         return keywords_found
     
     # return the function we just defined

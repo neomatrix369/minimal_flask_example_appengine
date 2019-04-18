@@ -8,10 +8,6 @@ from serve import get_keywords_api
 # create an instance of Flask
 app = Flask(__name__)
 
-# load our pre-trained model & function
-python_keywords_api = get_keywords_api("python")
-r_keywords_api = get_keywords_api("r")
-
 # Define our "ping" end point
 @app.route('/ping')
 def ping():
