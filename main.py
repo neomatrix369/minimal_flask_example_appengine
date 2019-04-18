@@ -14,8 +14,8 @@ r_keywords_api = get_keywords_api("r")
 
 # Define our "ping" end point
 @app.route('/ping')
-def ping_api():
-  return(ping())
+def ping():
+  return("Pong!")
 
 # Define a post method for our API: python packages.
 @app.route('/extractpackages/python', methods=['POST'])
