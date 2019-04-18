@@ -41,7 +41,10 @@ def extractpackages(language="python"):
     # (returning a dictionary wouldn't be very
     # helpful for someone querying our API from
     # java; JSON is more flexible/portable)
+
+    print(output_data)
     response = json.dumps(output_data)
 
+    print(response)
     # return our json file
     return response
